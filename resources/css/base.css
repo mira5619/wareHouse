@@ -5,7 +5,7 @@
                                 /* Site-Wide Styles */
 
                                  :root {
-                                    --color-primary: hsla(138, 59%, 27%, 1);
+                                    --color-primary: hsl(138, 59%, 27%);
                                     --color-secondary: hsla(138, 59%, 27%, .5);
                                 }
 
@@ -237,6 +237,8 @@
                                 }
 
                                 .logo {
+                                    width: 184px;
+                                    height: 30px;
                                     transition: all 0.5s ease-in-out;
                                 }
 
