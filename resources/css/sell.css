@@ -17,6 +17,7 @@
 form {
     display: grid;
     grid-template-areas: 'name name price quantity' 'description description description description' '. . . submit';
+    grid-gap: 10px;
     font-size: inherit;
 }
 

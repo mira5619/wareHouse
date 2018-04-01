@@ -46,6 +46,8 @@
             /* font-size: inherit; */
         }
 
+        
+
         .landing .product-list {
             grid-template-columns: repeat(4, 1fr);
         }
@@ -68,7 +70,7 @@
         @media only screen and (max-width: 860px) {
             .landing .product-list {
                 grid-template-columns: repeat(2, 1fr);
-                justify-content: stretch;
+                /* justify-content: stretch; */
             }
             .products {
                 padding: 0;

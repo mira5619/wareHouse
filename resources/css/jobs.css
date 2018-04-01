@@ -1,13 +1,15 @@
 #main {
     text-align: left;
-    justify-items: auto;
+    /* justify-items: auto; */
+    justify-items: center;
+    align-items: center;
 }
 
 .jobs {
     padding: 3.75rem 11.75rem 7.5625rem 11.75rem;
 }
 
-.jobs h3 {
+.jobs h1 {
     margin-bottom: 2.5rem;
     /* font-size: inherit; */
 }
@@ -15,6 +17,7 @@
 form {
     display: grid;
     grid-template-columns: repeat(2, 2fr) 1fr;
+    grid-gap: 10px;
     /* align-items: flex-end; */
     align-items: end;
     margin-bottom: 3.125rem;
@@ -24,7 +27,7 @@ form {
     height: fit-content;
     padding: 1.14rem 0;
     width: 130px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .job-list {
@@ -36,6 +39,10 @@ form {
     padding: 1rem 0;
 }
 
+.job h4 {
+    color: black;
+}
+
 #main .job-list .job h4 {
     padding-bottom: .5rem;
     /* font-size: inherit; */
@@ -44,10 +51,48 @@ form {
     background-color: transparent;
     padding-left: 0;
     font-family: 'Arial-MT';
-    text-transform:none;
+    text-transform: none;
 }
 
 #see-all-jobs {
     justify-self: center;
     margin-top: 3.6875rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    #main form {
+        grid-template-columns: repeat(2, 2fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        grid-row: 2;
+    }
+    h3 {
+        grid-row: 3;
+    }
+    form .button {
+        grid-column: 2;
+        justify-self: end;
+    }
+    .job-list {
+        grid-row: 4;
+    }
+    .jobs {
+        padding: 2rem;
+    }
+    .button {
+        grid-row: 5;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    #main form {
+        display: block;
+    }
+    
+    #main form .button {
+        padding: 0.9rem 6rem;
+    }
+    
+    .field {
+        margin-bottom: 25px;
+    }
 }
